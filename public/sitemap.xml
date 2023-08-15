@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost/topics/</loc>
+  </url><url>
+    <loc>http://localhost/writeups/</loc>
+  </url><url>
+    <loc>http://localhost/writeups/linux/</loc>
+  </url><url>
+    <loc>http://localhost/writeups/linux/optimum/</loc>
+  </url><url>
+    <loc>http://localhost/writeups/windows/</loc>
+  </url><url>
+    <loc>http://localhost/writeups/windows/legacy/</loc>
+  </url><url>
+    <loc>http://localhost/</loc>
+  </url><url>
+    <loc>http://localhost/tags/</loc>
+  </url>
+</urlset>

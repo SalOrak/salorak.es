@@ -1,0 +1,25 @@
+---
+main:
+  - name: Topics
+    ref: "/topics"
+    icon: "tree-icon"
+
+  - name: WriteUps
+    ref: "/writeups"
+    icon: "bug-icon"
+    sub:
+      - name: Linux
+        ref: "/writeups/linux"
+        icon: "linux-icon"
+        sub:
+        - name: Optimum
+          ref: "/writeups/linux/optimum"
+      - name: Windows
+        ref: "/writeups/windows"
+        icon: "windows-icon"
+        sub:
+          - name: Legacy
+            ref: "/writeups/windows/legacy"
+      - name: macOS
+        ref: "/writeups/macos"
+        icon: "macos-icon"
