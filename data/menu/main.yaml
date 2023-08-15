@@ -1,8 +1,16 @@
 ---
 main:
-  - name: Topics
-    ref: "/topics"
-    icon: "tree-icon"
+  - name: Projects
+    ref: "/projects"
+    icon: "star-icon"
+
+  - name: Thoughts
+    ref: "/thoughts"
+    icon: "star-icon"
+
+  - name: Theory
+    ref: "/theory"
+    icon: "topics-icon"
 
   - name: WriteUps
     ref: "/writeups"

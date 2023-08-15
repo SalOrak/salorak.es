@@ -1,0 +1,10 @@
+---
+more:
+  - name: About me 
+    ref: "https://about.salorak.es"
+    external: true
+    icon: "gdoc_person"
+  - name: Github
+    ref: "https://github.com/salorak/"
+    external: true
+    icon: "gdoc_github"
