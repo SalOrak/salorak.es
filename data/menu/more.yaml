@@ -4,7 +4,15 @@ more:
     ref: "https://about.salorak.es"
     external: true
     icon: "gdoc_person"
+  - name: CV
+    ref: "https://salorak.es"
+    external: true
+    icon: "gdoc_download"
   - name: Github
     ref: "https://github.com/salorak/"
     external: true
     icon: "gdoc_github"
+  - name: Contact 
+    ref: "mailto:hectorflores.dev@gmail.com"
+    external: true
+    icon: "gdoc_email"
