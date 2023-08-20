@@ -3,6 +3,10 @@ main:
   - name: Projects
     ref: "/projects"
     icon: "star-icon"
+    sub:
+      - name: Current 
+        ref: "/projects/current"
+        icon: "gdoc_fire"
 
   - name: Thoughts
     ref: "/thoughts"
