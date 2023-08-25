@@ -1,4 +1,0 @@
----
-description: "macOS section"
----
-# Test
