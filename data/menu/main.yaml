@@ -2,22 +2,22 @@
 main:
   - name: Projects
     ref: "/projects"
-    icon: "star-icon"
+    icon: "star-full-icon"
     sub:
       - name: Current 
         ref: "/projects/current"
-        icon: "gdoc_fire"
+        icon: "lock-open-icon"
 
   - name: The art of programming
     ref: "/art-programming"
-    icon: "gdoc_path"
+    icon: "book-whills-icon"
     sub:
       - name: Cross-concepts
         ref: "/art-programming/cross-concepts"
         icon: "gdoc_fire"
       - name: Languages
         ref: "/art-programming/languages"
-        icon: "gdoc_fire"
+        icon: "code-icon"
         sub: 
           - name: C
             ref: "/art-programming/languages/c"
@@ -33,11 +33,12 @@ main:
             icon: "gdoc_fire"
       - name: Systems
         ref: "/art-programming/systems"
-        icon: "gdoc_fire"
+        icon: "systems-icon"
+
   - name: Hacking
     ref: "/hacking"
     icon: "bug-icon"
 
-  - name: Voice
+  - name: Notes
     ref: "/voice"
-    icon: "gdoc_cloud_off"
+    icon: "pen-fancy-icon"

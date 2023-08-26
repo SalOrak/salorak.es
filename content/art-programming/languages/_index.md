@@ -1,5 +1,6 @@
 ---
 geekDocCollapseSection: true
+geekDocDescription: test
 
 ---
 The languages to be explored are in no particular order:
@@ -7,4 +8,6 @@ The languages to be explored are in no particular order:
  - GoLang
  - Assembly
  - Haskell
+ 
+{{<toc-tree>}}
 

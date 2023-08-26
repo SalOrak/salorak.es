@@ -1,5 +1,8 @@
-
+---
+---
 **The art of programming** is the name I decided to give to my experiment where I try to become a Programmer Artist.
+
+{{< toc  >}}
 
 ### Programmer Artist
 What do I mean by *Programmer Artist?* 
@@ -61,5 +64,3 @@ Here is the road:
 
 *Diagon source file: https://salorak.es/art-programming/tree.diagon*
 
-### Table of contents
- {{< toc-tree >}}
