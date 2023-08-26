@@ -1,4 +1,4 @@
-baseURL = "http://0.0.0.0"
+baseURL = "https://salorak.es"
 title = "Sal O'Rak"
 theme = "hugo-geekdoc"
 
