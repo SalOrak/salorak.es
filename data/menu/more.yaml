@@ -12,10 +12,6 @@ more:
     ref: "https://github.com/salorak/"
     external: true
     icon: "gdoc_github"
-  - name: Personal Gitea
-    ref: "https://gitea.salorak.es"
-    external: true
-    icon: "gdoc_gitea"
   - name: Contact 
     ref: "mailto:hectorflores.dev@gmail.com"
     external: true
