@@ -1,11 +1,7 @@
 ---
 more:
-  - name: About me 
-    ref: "https://about.salorak.es"
-    external: true
-    icon: "gdoc_person"
   - name: CV
-    ref: "https://salorak.es"
+    ref: "https://salorak.es/curriculum-vitae.pdf"
     external: true
     icon: "gdoc_download"
   - name: Github
