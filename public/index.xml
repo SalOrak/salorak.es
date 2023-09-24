@@ -2,34 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sal O&#39;Rak</title>
-    <link>http://localhost/</link>
+    <link>https://salorak.es/</link>
     <description>Recent content on Sal O&#39;Rak</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://localhost/writeups/linux/optimum/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/writeups/linux/optimum/</guid>
-      <description>Optimum #web #hfs #technique-webserver #searchsploit #cve-exploit
-IP: 10.10.10.8 Start date: [[2022-04-14]] End date: [[2022-04-15]]
-1.0 Enumeration - Nmap Initial enumeration.
-title: `nmap -SCV -p- -n -Pn --min-rate 5000 -oA nmap/optimum.tcp 10.10.10.8` collapse: open ```python PORT STATE SERVICE VERSION 80/tcp open http HttpFileServer httpd 2.3 |_http-title: HFS / |_http-server-header: HFS 2.3 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows There is only one port open, which is 80 and hosting a http web server running HttpFileServer version httpd 2.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/writeups/windows/legacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/writeups/windows/legacy/</guid>
-      <description>System data Domain name: LEGACY
-Windows versions: Windows 5.1
-It seems to be vulnerable to ms08-067
-Using msfconsole is super easy to exploit the system and get both the user and root flag at the same time. I&amp;rsquo;m going to try to exploit it manually.
-Flow process title: Port scanning collapse: closed ```ad-question title: `nmap --open -T5 -p- -vvv 10.10.10.4 -n -Pn -oG nmap/allports` collapse: closed ~~~python PORT STATE SERVICE REASON 139/tcp open netbios-ssn syn-ack 445/tcp open microsoft-ds syn-ack ``` ```ad-question title: `nmap -sCV -pC^V 10.</description>
-    </item>
-    
+    <language>en</language><atom:link href="https://salorak.es/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

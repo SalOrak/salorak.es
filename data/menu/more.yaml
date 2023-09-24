@@ -1,18 +1,14 @@
 ---
 more:
-  - name: About me 
-    ref: "https://about.salorak.es"
-    external: true
-    icon: "gdoc_person"
-  - name: CV
-    ref: "https://salorak.es"
-    external: true
-    icon: "gdoc_download"
   - name: Github
     ref: "https://github.com/salorak/"
     external: true
     icon: "gdoc_github"
   - name: Contact 
-    ref: "mailto:hectorflores.dev@gmail.com"
+    ref: "mailto:hectorflores.dev+salorak@gmail.com"
     external: true
     icon: "gdoc_email"
+  - name: CV 
+    ref: "https://salorak.es/cv.pdf"
+    external: true
+    icon: "gdoc_person"

@@ -1,5 +1,9 @@
 ---
 main:
+  - name: About me 
+    ref: "/"
+    icon: "home-icon"
+
   - name: Projects
     ref: "/projects"
     icon: "star-full-icon"
