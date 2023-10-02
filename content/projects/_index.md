@@ -13,6 +13,7 @@ The following list are the current **public** projects I've done:
 - [dotfiles](https://github.com/salorak/dotfiles.git): A simple bash script to configure (and link) all my configurations files. It also contains my current configuration files.
 - [salorak-configuration-files](https://github.com/salorak/salorak-config-files.git): A previous version of my dotfiles where I created bash scripts to configure and install any dependencies of each configuration files. It also contains some useful scripts such as a VPN selector to choose between [HackTheBox](https://hackthebox.com) and [TryHackMe](https://tryhackme.com) openvpn files. Feel free to check it out!
 - [cursed-matrix](https://github.com/salorak/cursed-matrix.git): A simple matrix effect written in C using the ncurses library, thus the name. It is not finished but it works relatively well on Linux machines. 
+- [whaler.nvim](https://github.com/salorak/whaler.nvim.git): A Neovim telescope extension plugin to move between projects blazingly fast, using the same concepts of the [tmux-sesionizer](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) from [ThePrimeagen](https://github.com/theprimeagen). Check it out!
 
 
 ### [dotfiles](https://github.com/salorak/dotfiles.git)
@@ -36,4 +37,16 @@ One of the things I did was create a bash script to install each package I had i
 A simple matrix effect written in C using the [ncurses](https://invisible-island.net/ncurses/ncurses.html) library.
 
 I've been using many guides, packages, plugins, applications, utilities and public forks over the years. This project is a naive attempt to give something out there. It is simple, basic but it kinda does the job. 
+
+
+### [whaler.nvim](https://github.com/salorak/whaler.nvim.git)
+
+`Whaler.nvim` is a neovim plugin that uses the incredible UI and functionality of [Telescope](https://github.com/nvim-telescope/telescope.nvim) to allow fast-switching between directories.
+
+On setup you add which directories contain the projects you want to keep an eye on and that's it! 
+
+The plugin is made with customization in mind, so don't forget to check that out too! 
+
+In case you are looking for the repository, [click here](https://github.com/salorak/whaler.nvim.git) to go directly ;)
+
 

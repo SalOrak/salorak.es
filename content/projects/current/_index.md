@@ -7,13 +7,18 @@ resources:
 
 # What am I doing right now?
 
-Well, I'm actually doing everything and nothing all at once. Let's say I'm finishing up this website and the [About me](https://http.cat/status/503) website, which it is still under development.
+Hey! I've been working on a couple of things all at the same time but it's time to update this page right?
 
-Once my focus changes I'll post here an update.
+I've developed a plugin for neovim that I really wanted to have, check it out [here](http://github.com/salorak/whaler.nvim.git) aaaaaaand I've been looking into starting a more ambitious project.
 
-![http://www.quickmeme.com/meme/3qevvo](./meme.jpeg)
+I won't spoil anything but the main theme of the project is around `containers` and `eBPF`.
+This interest came right after watching almost all conferences of [Liz Rice](https://www.youtube.com/results?search_query=liz+rice) on YouTube. You should definitely take a look, they are worth your time I promise.
 
-*Credits: [Quickmeme](http://www.quickmeme.com/meme/3qevvo)*
 
 
+# What about `The art of programming` project ? 
+
+The art of programming is an ambitious project that I'm slowly working on. It takes time to practice, understand and put into words so many concepts and experiences.
+
+Be patient ! 
 
