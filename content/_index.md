@@ -30,10 +30,10 @@ From my standard CV:
 > *I define myself as a passionate developer focusing on security and systems programming as a
 > professional who has worked in a wide spectrum of disciplines, seeking to learn and implement each
 > perspective into the workflow. I'm a Penetration Tester and a Programmer who enjoys the art that goes
-> into each work. I thrive on establishing best practices and automating as much as possible*
+> into each work. I thrive on establishing best practices and automating as much as possible.*
 
 
-So, what is the purpose of this website you ask. Well, first of all, nice question, and the secondly, the purpose of **salorak.es** is to share the things I'm building, studying  or breaking with some ocassionally written down thoughts. 
+So, what is the purpose of this website you ask. Well, first of all, nice question, and secondly, the purpose of **salorak.es** is to share the things I'm building, studying  or breaking with some ocassionally written down thoughts. 
 
 There are **3** main sections:
 
