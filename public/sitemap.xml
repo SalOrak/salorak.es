@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://salorak.es/</loc>
+    <loc>http://localhost:1313/art-programming/</loc>
     <lastmod>2023-08-26T19:12:48+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/</loc>
+    <loc>http://localhost:1313/art-programming/languages/</loc>
     <lastmod>2023-08-26T19:12:48+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/languages/</loc>
+    <loc>http://localhost:1313/art-programming/languages/assembly/</loc>
     <lastmod>2023-08-26T19:12:48+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/languages/assembly/</loc>
-    <lastmod>2023-08-26T19:12:48+02:00</lastmod>
-  </url><url>
-    <loc>https://salorak.es/art-programming/languages/c/</loc>
+    <loc>http://localhost:1313/art-programming/languages/c/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/languages/go/</loc>
+    <loc>http://localhost:1313/art-programming/languages/go/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/languages/haskell/</loc>
+    <loc>http://localhost:1313/art-programming/languages/haskell/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/art-programming/systems/</loc>
+    <loc>http://localhost:1313/art-programming/systems/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/hacking/</loc>
+    <loc>http://localhost:1313/hacking/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/projects/</loc>
-    <lastmod>2023-08-20T21:37:59+02:00</lastmod>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2023-10-22T22:08:14+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/projects/current/</loc>
-    <lastmod>2023-08-20T21:37:59+02:00</lastmod>
+    <loc>http://localhost:1313/projects/current/</loc>
+    <lastmod>2023-10-02T19:04:09+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/voice/</loc>
+    <loc>http://localhost:1313/voice/</loc>
     <lastmod>2023-08-25T19:57:29+02:00</lastmod>
   </url><url>
-    <loc>https://salorak.es/tags/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-10-22T22:08:14+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

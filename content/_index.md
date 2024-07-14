@@ -54,7 +54,7 @@ For more info, check it out [here](art-programming).
 <---> <!-- magic separator, between columns -->
 
 ## Hacking
-Hmmmm, yes. I like challenges and nowadays one of the most satisfying challenges is hacking. Hacking gives anyone who tries it a new perspective, the "Out of the Box" one. This perspective brings new questions in the working place. 
+I like challenges and nowadays one of the most satisfying challenges is hacking. Hacking gives anyone who tries it a new perspective, the "Out of the Box" one. This perspective brings new questions in the working place. 
 This section is where I'll post *clean* writeups from various websites. Use this arrow [-->](hacking) to go there.
 
 

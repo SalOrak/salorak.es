@@ -14,6 +14,7 @@ The following list are the current **public** projects I've done:
 - [salorak-configuration-files](https://github.com/salorak/salorak-config-files.git): A previous version of my dotfiles where I created bash scripts to configure and install any dependencies of each configuration files. It also contains some useful scripts such as a VPN selector to choose between [HackTheBox](https://hackthebox.com) and [TryHackMe](https://tryhackme.com) openvpn files. Feel free to check it out!
 - [cursed-matrix](https://github.com/salorak/cursed-matrix.git): A simple matrix effect written in C using the ncurses library, thus the name. It is not finished but it works relatively well on Linux machines. 
 - [whaler.nvim](https://github.com/salorak/whaler.nvim.git): A Neovim telescope extension plugin to move between projects blazingly fast, using the same concepts of the [tmux-sesionizer](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) from [ThePrimeagen](https://github.com/theprimeagen). Check it out!
+- [whaler.el](https://github.com/salorak/whaler.el.git): A port of [whaler.nvim](https://github.com/salorak/whaler.nvim.git) to the Emacs ecosystem. It is a minimalistic and highly customizable project manager. It is available on [MELPA](https://melpa.org/).
 - [qmk\_firmware](https://github.com/salorak/qmk_firmware.git): A QMK fork to store my own QMK configuration and layout.
 
 
@@ -50,6 +51,19 @@ The plugin is made with customization in mind, so don't forget to check that out
 
 In case you are looking for the repository, [click here](https://github.com/salorak/whaler.nvim.git) to go directly ;)
 
+### [whaler.el](https://github.com/salorak/whaler.el.git)
+
+`Whaler.el` is a port of the [whaler.nvim](https://github.com/salorak/whaler.nvim.git) neovim plugin to the Emacs ecosystem. 
+
+It is based around the same concept but adding a more customizable API for Emacs users to work with.
+
+**Whaler** offers a tailored experience to managing your projects. It is a minimalistic and highly customizable project manager. 
+
+**Whaler** acts as a `completing-read` function extension to move ~blazingly~ fast between directories as well as have a minimalistic sense of working directory whilst providing an easy to use API to work with directories.
+
+`Whaler.el` is a package to move between directories while maintaining a sense of working directory, i.e a project manager.
+
+Don't forget to check it out, it is available on [MELPA](https://melpa.org/#/whaler).
 
 ### [qmk\_firmware](https://github.com/salorak/qmk_firmware.git)
 
