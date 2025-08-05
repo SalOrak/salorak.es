@@ -2,10 +2,6 @@
 on: push
 name: Build and deploy GH Pages
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
