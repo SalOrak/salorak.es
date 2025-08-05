@@ -1,0 +1,53 @@
+# The URL the site will be built for
+base_url = "https://salorak.es"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+author = "Sal O'Rak"
+theme = "apollo"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+
+[extra]
+theme = "dark"
+
+socials = [
+    { name = "linkedin", url = "https://www.linkedin.com/in/hector-alarcon-salorak/", icon = "linkedin" },
+    { name = "github", url = "https://github.com/salorak/", icon = "github" },
+]
+
+menu = [
+    { name = "/home", url = "/", weight = 0 },
+    { name = "/blog", url = "/blog", weight = 1 },
+    { name = "/projects", url = "/projects", weight = 2 },
+    { name = "/about", url = "/about", weight = 3 },
+]
+
+stylesheets = [
+    "theme.css",
+    "custom.css"
+]
+
+logo = "salorak.png"
+favicon = "/icon/favicon.png"
+
+use_cdn = false
+fancy_code = true
+insert_anchor_links = "heading"
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+

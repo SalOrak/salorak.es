@@ -1,0 +1,49 @@
+@import '_kanagawa.scss';
+
+// 🌘 Base background tone from Kanagawa (Sumi Ink 0)
+$bg-0: #1f1f28; // sumiInk1
+
+// Derived background variants
+$bg-1: lighten($bg-0, 5%);
+$bg-2: lighten($bg-1, 10%);
+
+// Text variants (similar contrast philosophy as your example)
+$text-0: lighten($bg-0, 87%); // fujiWhite-ish
+$text-1: lighten($bg-0, 60%);
+$text-2: lighten($bg-0, 40%);
+
+// Core Kanagawa Wave accent colors
+$primary-color: #7E9CD8;      // crystalBlue
+$secondary-color: #DCA561;    // autumnYellow
+$highlight-color: #E46876;    // waveRed
+$heading-color: #938AA9;      // springViolet1
+$link-hover-color: #7FB4CA;   // springBlue
+
+:root.dark {
+  // Typography
+  --text-0: #{$text-0};
+  --text-1: #{$text-1};
+  --text-2: #{$text-2};
+
+  // Backgrounds
+  --bg-0: #{$bg-0};
+  --bg-1: #{$bg-1};
+  --bg-2: #{$bg-2};
+
+  // Borders
+  --border-color: var(--bg-2);
+
+  // Accent colors
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --highlight-color: #{$highlight-color};
+  --heading-color: #{$heading-color};
+  --link-hover-color: #{$link-hover-color};
+
+  // Optional: images/icons
+  .social > img,
+  .search-button > img {
+    filter: invert(1);
+  }
+}
+
