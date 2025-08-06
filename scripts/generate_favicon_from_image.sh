@@ -1,3 +1,5 @@
+set -o errexit  # Used to exit upon error, avoiding cascading errors
+
 output="./favicons"
 expected_args=1
 
@@ -67,12 +69,3 @@ for fav in "${favicon_sizes[@]}"; do
 done
 
 exit 0
-
-
-# First let's get information about the image
-
-# 16x16: The most common favicon 
-# convert input.jpg -resize 800x600\! output.jpg
-# 32x32: For higher resolution
-# convert input.jpg -resize 800x600\! output.jpg
-
