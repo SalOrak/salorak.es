@@ -1,0 +1,7 @@
+<div style="display:flex; gap: 1rem; justify-content: space-evenly">
+    {% set image = resize_image(path=path, width=size, height=size, op="fit") %}
+    <img src="{{ image.url }}">
+    <div>
+        {{ body }}
+    </div>
+</div>

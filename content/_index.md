@@ -34,4 +34,19 @@ And I find myself amused by platforms such as [CodeBerg](https://codeberg.org) o
 
 ### And another subsubsection!
 
+{{ sided_images(left="/images/cv-image_256x256.png", right="/images/detailed-github-nobg_256x256.png",width=256,height=256,op="fill") }}
+
+## Image + Text
+
+{% left_image_text(path="/images/cv-image_256x256.png", size=256) %}
+hello world! 
+my name is hector and i'm testing a shortcode functionality.
+
+{% end %}
+
+{% right_image_text(path="/images/cv-image_256x256.png", size=256) %}
+hello world! 
+my name is hector and i'm testing a shortcode functionality.
+
+{% end %}
  

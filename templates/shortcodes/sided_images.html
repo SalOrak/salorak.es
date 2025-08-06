@@ -1,7 +1,6 @@
-<div style="display: flex; gap: 1rem; justify-content: center">
-    {% set left = resize_image(path=left, width=width, height=height, op="fill") %}
-    {% set right = resize_image(path=right, width=width, height=height, op="fill") %}
-
+<div style="display: flex; gap: 1rem; justify-content: space-evenly">
+    {% set left = resize_image(path=left, width=width, height=height, op="fit") %}
+    {% set right = resize_image(path=right, width=width, height=height, op="fit") %}
     <img src="{{ left.url }}"/>
     <img src="{{ right.url }}"/>
 </div>
