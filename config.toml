@@ -36,8 +36,8 @@ stylesheets = [
     "custom.css"
 ]
 
-logo = "salorak.png"
-favicon = "/icon/favicon.png"
+logo = "/images/minimalist-logo_128x128.png"
+favicon = "/icon/favicon.svg"
 
 use_cdn = false
 fancy_code = true
