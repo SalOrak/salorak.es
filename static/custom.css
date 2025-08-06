@@ -25,6 +25,10 @@ html {
     }
 }
 
+.right-nav {
+    padding: 0.5rem;
+}
+
 nav {
     background-color: var(--bg-1);
     border-radius: 1.2rem;
