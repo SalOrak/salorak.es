@@ -10,10 +10,21 @@ build_search_index = true
 author = "Sal O'Rak"
 theme = "apollo"
 
+taxonomies = [
+    { name = "tags"},
+    { name = "authors"},
+]
+
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+render_emoji=true
+
+bottom_footnotes=true
 
 
 [extra]
@@ -26,22 +37,27 @@ socials = [
 
 menu = [
     { name = " 🧭 Home ", url = "/", weight = 0, desc = "Homepage, exactly where you are."},
-    { name = " 📖 Blog ", url = "/blog", weight = 1, desc = "Posts like a blog. Thoughts, works and working articles."},
-    { name = " 📜 Projects ", url = "/projects", weight = 2, desc = "Projects I've developed or contributed to. Sometimes, projects I'd love to contribute to."},
-    { name = " 🎓 About ", url = "/about", weight = 3, desc = "If you want to know more about me, who I am and what I do, this is the place." },
+    { name = " 📖 Blog ", url = "/blog/", weight = 1, desc = "Posts like a blog. Thoughts, works and working articles."},
+    { name = " 📜 Projects ", url = "/projects/", weight = 2, desc = "Projects I've developed or contributed to. Sometimes, projects I'd love to contribute to."},
+    { name = " 🎓 About ", url = "/about/", weight = 3, desc = "If you want to know more about me, who I am and what I do, this is the place." },
 ]
 
 stylesheets = [
     "theme.css",
-    "custom.css"
+    "custom.css",
+    "projects.css"
 ]
 
 logo = "/images/minimalist-logo_128x128.png"
 favicon = "/icon/favicon.svg"
 
+toc = true
+
 use_cdn = false
 fancy_code = true
 insert_anchor_links = "heading"
+
+last_page = false
 
 [search]
 include_title = true

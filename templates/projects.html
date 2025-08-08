@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% macro home_page(section) %}
+    <main>
+        <article>
+            <section class="body">
+                {{ post_macros::page_header(title=section.title) }}
+                {{ section.content | safe }}
+            </section>
+        </article>
+    </main>
+{% endmacro home_page %}
+
+{% macro project_display(pages) %}
+<div class="projects">
+    {% for page in pages %}
+    <div class="project">
+            <a style="margin-left: 0.2rem; align-self: center" href="{{ page.path }}" target="_self" rel="noopener noreferrer">
+                {{ page.title }}
+            </a>
+            <img alt="Right Arrow" src="{{ get_url(path="icons/utils/right_arrow.svg") }}" style="align-self: center; width: 70px; height: 70px;" class="filter-primary">
+
+            <div style="align-self: left">
+                {{ page.description }}
+                <a href="{{ page.extra.repo_url }}" target="_blank" rel="noopener noreferrer" class="project-git">
+                    <img alt="Right Arrow" src="{{ get_url(path="icons/social/github.svg") }}" style="filter: invert(1)" class="project-git">
+                </a>
+            </div>
+
+    </div>
+    {% endfor %}
+</div>
+{% endmacro project_display %}
+
+{% block main_content %}
+    {{ self::home_page(section=section) }}
+    <main>
+        {% set show_pages = section.pages %}
+        {{ self::project_display(pages=show_pages) }}
+    </main>
+{% endblock main_content %}
+

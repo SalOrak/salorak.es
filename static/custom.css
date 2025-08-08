@@ -45,4 +45,8 @@ nav {
     border-radius: 99999px;
 }
 
+.filter-primary {
+    filter: invert(88%) sepia(27%) saturate(5859%) hue-rotate(186deg) brightness(83%) contrast(106%);
+}
+
 
