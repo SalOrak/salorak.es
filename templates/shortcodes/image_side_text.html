@@ -1,0 +1,10 @@
+<br>
+<div style="display:flex; gap: 1rem; justify-content: space-around; flex-direction: row">
+    {% set image = resize_image(path=path, width=size, height=size, op="fill") %}
+    {% if pos == "left" %} <img style="{% if should_grow %} flex-grow: 2; {% endif %} align-self: center" src="{{ image.url }}"> {% endif %}
+    <div style="align-self: center">
+        {{ body | markdown | safe}}
+    </div>
+    {% if pos == "right" %} <img style="{% if should_grow %} flex-grow: 2;{% endif %} align-self: center" src="{{ image.url }}"> {% endif %}
+</div>
+<br>
