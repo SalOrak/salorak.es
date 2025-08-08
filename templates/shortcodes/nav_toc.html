@@ -1,0 +1,7 @@
+<div style="display: flex; justify-content: start; flex-direction: column">
+    {% for menu in config.extra.menu %}
+    <a href={{ get_url(path=menu.url) }} style="border-bottom: 0px; margin-right: 0.5em">
+        <span style="border-bottom: 2px solid var(--primary-color)"> {{ menu.name }} </span>: {{ menu.desc }}
+    </a>
+    {% endfor %}
+</div>
