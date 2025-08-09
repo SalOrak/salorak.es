@@ -18,3 +18,8 @@ And of course, you can use the following links:
 {{ nav_toc() }}
 
 
+
+## Contact
+
+Hey! If you want to contact me you can do so by sending me an email at [salorack@protonmail.com](mailto:salorack@protonmail.com)
+
