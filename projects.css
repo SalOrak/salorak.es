@@ -1,0 +1,50 @@
+.projects {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 1rem;
+    margin: 1rem; 
+}
+.project > a {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 0.15rem;
+    border-bottom: none; 
+    transition: filter 0.3s ease;
+}
+
+.project > a:hover {
+    background-color: var(--bg-0);
+    text-decoration-color: var(--link-hover-color);
+    text-decoration-thickness: 0.2rem;
+}
+
+img.project-git {
+    align-self: center;
+    width: 3.2rem;
+    height: 1.2rem;
+}
+
+img.project-git:hover {
+    color: var(--primary-color);
+}
+
+a.project-git {
+    transition: filter 0.3s ease;
+    border-bottom: none;
+}
+
+a.project-git:hover {
+    background-color: var(--bg-0);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+
