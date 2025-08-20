@@ -1,8 +1,8 @@
 +++
 title="QMK Firmware"
 description="A QMK fork where I keep my Corne's various layouts. Mainly Dvorak and Qwerty ones."
-weight=3
-date=2025-10-10
+weight=903
+date=2023-10-16
 
 [extra]
 repo_view=true

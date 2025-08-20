@@ -1,6 +1,6 @@
 +++
 title="Projects"
 template="cards.html"
-sort_by="weight"
+sort_by="date"
 +++
 

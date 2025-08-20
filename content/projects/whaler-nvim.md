@@ -1,7 +1,8 @@
 +++
 title="Whaler Neovim"
-description="A Neovim telescope extension plugin to move between projects blazingly fast, using the same concepts of the tmux-sesionizer from ThePrimeagen."
-weight=0
+description="A Neovim telescope extension plugin to move between projects blazingly fast."
+date=2023-10-29
+weight=900
 
 [taxonomies]
 tags=["neovim","lua"]

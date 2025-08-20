@@ -1,8 +1,8 @@
 +++
 title="Cursed Matrix"
-description="A simple matrix effect written in C using the ncurses library, thus the name. It is not finished but it works relatively well on Linux machines."
-weight=4
-date=2025-10-10
+description="A simple matrix effect written in C using the ncurses library, thus the name. It is not finished but it works relatively well."
+weight=904
+date=2023-08-09
 
 [taxonomies]
 tags = ["c"]
@@ -11,7 +11,6 @@ tags = ["c"]
 repo_view=true
 repo_url="https://github.com/SalOrak/cursed-matrix.git"
 local_image="thumbnails/cursed-matrix-logo.png"
-weight=2
 +++
 
 # Cursed Matrix

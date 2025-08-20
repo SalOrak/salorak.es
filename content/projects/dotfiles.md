@@ -1,8 +1,8 @@
 +++
 title="Dotfiles"
 description="A simple bash script to configure (and link) all my configurations files. It also contains my current configuration files."
-weight=2
-date=2025-10-10
+weight=902
+date=2023-08-10
 
 [taxonomies]
 tags=["bash","dotfiles"]

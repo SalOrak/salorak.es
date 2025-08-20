@@ -1,8 +1,8 @@
 +++
 title="Whaler Emacs"
-description="A port of Whaler.nvim to the Emacs ecosystem. It is a minimalistic and highly customizable project manager. Available on MELPA."
-weight=1
-date=2025-10-10
+description="A port of Whaler.nvim to the Emacs ecosystem. It is a minimalistic and highly customizable project manager."
+weight=901
+date=2024-11-24
 [taxonomies]
 tags=["emacs","elisp"]
 
