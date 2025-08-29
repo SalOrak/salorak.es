@@ -24,6 +24,6 @@ As a computer engineer I explored many territories, some wilder than other. What
 {% end %}
 
 
-Hey! If you want to contact me you can do so by sending me an email at [salorack@protonmail.com](mailto:salorack@protonmail.com)
+Hey! If you want to contact me you can do so by sending me an email at [hello@salorak.es](mailto:hello@salorak.es)
 
 

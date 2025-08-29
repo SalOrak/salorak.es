@@ -21,5 +21,5 @@ And of course, you can use the following links:
 
 ## Contact
 
-Hey! If you want to contact me you can do so by sending me an email at [salorack@protonmail.com](mailto:salorack@protonmail.com)
+Hey! If you want to contact me you can do so by sending me an email at [hello@salorak.es](mailto:hello@salorak.es)
 

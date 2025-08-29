@@ -33,7 +33,7 @@ theme = "dark"
 socials = [
     { name = "linkedin", url = "https://www.linkedin.com/in/hector-alarcon-salorak/", icon = "linkedin" },
     { name = "github", url = "https://github.com/salorak/", icon = "github" },
-    { name = "contact", url = "mailto:salorack@protonmail.com", icon = "email" },
+    { name = "contact", url = "mailto:hello@salorak.es", icon = "email" },
 ]
 
 menu = [
