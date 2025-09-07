@@ -1,19 +1,14 @@
 .cards {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr; /* one card per row */
   gap: 24px;
   padding: 12px 0;
+  justify-content: center;
 }
 
-@media all and (min-width: 640px) {
+@media (max-width: 720px) {
   .cards {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  }
-}
-
-@media all and (max-width: 640px) {
-  .cards {
-    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 18px;
   }
 }
 
@@ -24,40 +19,52 @@
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* default for phones */
 }
 
-.card-info {
-  padding: 0 24px 24px 24px;
-  flex: 0 0 10%;
-}
-
-.card-title {
-  margin-top: 0.7em;
-}
-
-.card-image {
-  border: unset;
-  width: 100%;
-  min-height: 300px;
-  flex: 0 0 55%;
-}
-
-.card-image-placeholder {
-  border: unset;
-  width: 100%;
-  min-height: 300px;
-  flex: 0 0 55%;
-}
-
-.card-description {
-  margin-top: 0.5em;
-  overflow: hidden;
-  flex: 0 0 35%;
-}
-
-@media all and (max-width: 720px) {
-  .cards {
-    gap: 18px;
+/* Larger screens: side-by-side layout */
+@media (min-width: 721px) {
+  .card {
+    flex-direction: row;
+    max-height: 300px;
+    min-height: 300px;
   }
 }
+
+/* Image styles */
+.card-image,
+.card-image-placeholder {
+  width: 100%;          /* full width on phones */
+  min-height: 200px;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+@media (min-width: 721px) {
+  .card-image,
+  .card-image-placeholder {
+    width: 30%;          /* left side on desktop/tablet */
+    min-height: auto;
+    padding: 10px 10px 10px 1rem;
+    border-radius: 20px;
+    justify-content: center;
+  }
+}
+
+/* Info section */
+.card-info {
+  padding: 16px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .card-description {
+        margin-top: 0.5em;
+        overflow: visible;   /* let text expand */
+        flex: 1;             /* allow it to take remaining space */
+    }
+}
+

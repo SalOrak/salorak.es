@@ -46,7 +46,8 @@ menu = [
 stylesheets = [
     "custom.css",
     "theme.css",
-    "projects.css"
+    "projects.css",
+    "cards.css"
 ]
 
 logo = "/images/minimalist-logo_128x128.png"
