@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;salorak.es">
+
+    
+
+    
+    
+    
+        <title>
+            
+                Linux Kernel Modules
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="Linux Kernel Modules" />
+        
+    
+
+    
+        
+            <meta property="og:description" content="Custom Linux Kernel Modules repository to experiment with." />
+        
+    
+
+    
+        
+            <meta name="description" content="Custom Linux Kernel Modules repository to experiment with." />
+        
+    
+
+    
+    <link rel="icon" type="image/png" href=https://salorak.es/icon/favicon.svg />
+
+    
+    
+        <link href=https://salorak.es/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+
+    
+    <script defer src=https://salorak.es/js/codeblock.js></script>
+
+    
+    <script defer src=https://salorak.es/js/toc.js></script>
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://salorak.es/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://salorak.es/main.css" />
+
+    
+        
+            <link rel="stylesheet" href="https://salorak.es/custom.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/theme.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/projects.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/cards.css">
+        
+    
+
+    
+        <script defer
+                src="https://salorak.es/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script></head>
+
+
+    <body>
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https:&#x2F;&#x2F;salorak.es class="logo">
+                <img alt="" src="https://salorak.es/images/minimalist-logo_128x128.png">
+            </a>
+        
+
+
+        <div class="socials">
+            
+                <a rel="me" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;hector-alarcon-salorak&#x2F;" class="social">
+                    <img alt="linkedin" src="https://salorak.es/icons/social/linkedin.svg">
+                </a>
+            
+                <a rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;salorak&#x2F;" class="social">
+                    <img alt="github" src="https://salorak.es/icons/social/github.svg">
+                </a>
+            
+                <a rel="me" href="mailto:hello@salorak.es" class="social">
+                    <img alt="contact" src="https://salorak.es/icons/social/email.svg">
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://salorak.es style="margin-right: 0.5em"> &#x2F;home </a>
+        
+            <a href=https://salorak.es/blog style="margin-right: 0.5em"> &#x2F;blog </a>
+        
+            <a href=https://salorak.es/projects style="margin-right: 0.5em"> &#x2F;projects </a>
+        
+            <a href=https://salorak.es/about style="margin-right: 0.5em"> &#x2F;about </a>
+        
+
+        
+            <button id="search-button"
+                    class="search-button"
+                    title="$SHORTCUT to open search">
+                <img src="https://salorak.es/icons/search.svg"
+                    alt="Search"
+                    class="search-icon">
+            </button>
+
+            <div id="searchModal"
+                class="search-modal js"
+                role="dialog"
+                aria-labelledby="modalTitle">
+                <div id="modal-content">
+                    <h1 id="modalTitle" class="page-header">Search</h1>
+                    <div id="searchBar">
+                        <input id="searchInput"
+                            role="combobox"
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-expanded="false"
+                            aria-controls="results-container"
+                            placeholder="Search..." />
+                        <button id="clear-search" class="clear-button" title="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="results-container">
+                        <div id="results-info">
+                            <span id="zero_results" style="display: none;">No results</span>
+                            <span id="one_result" style="display: none;">1 result</span>
+                            <span id="many_results" style="display: none;">$NUMBER results</span>
+                        </div>
+                        <div id="results" role="listbox"></div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+    </div>
+</nav>
+
+
+            
+            
+    
+<div class="visible-element-observer-root" data-selector="main article p">
+    <main>
+        <article>
+            <div class="title">
+                
+                
+    
+    <div class="page-header">
+        Linux Kernel Modules
+    </div>
+    
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2025-08-31</time>
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                            
+                        
+
+                        
+                            :: <a href="https:&#x2F;&#x2F;github.com&#x2F;SalOrak&#x2F;kernel-modules.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        
+                    
+
+                    
+                    
+
+                    
+                    
+                        <span class="tags-label"> :: </span>
+                        <span class="tags">
+                                <a href="https://salorak.es/tags/linux/"
+                                   class="post-tag">linux</a>
+                            
+                                <a href="https://salorak.es/tags/kernel/"
+                                   class="post-tag">kernel</a>
+                            
+                                <a href="https://salorak.es/tags/c/"
+                                   class="post-tag">c</a>
+                            
+                        </span>
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+
+            <section class="body">
+                <h1 id="kernel-modules">Kernel Modules</h1>
+<p>I have been studying how computers works for a long time. But there was always something itching. I never <strong>truly</strong> understood how Linux works. I mean, I knew about processes, filesystem, drivers, devices, memory management and all of those things. But, how do I generate an image I can boot with QEMU? What does the Linux code looks like? What are the components?</p>
+<p>Well, this project attempts to understand <strong>just</strong> a tiny bit about the Linux Kernel: developing custom Linux Kernel Modules.</p>
+<p>More important, I'd like to know how <em>far</em> you can get developing modules. Why do we have them in the first place? What can I achieve that I can't in userland? If a module crashes, can I crash the whole system? These and more questions are the tip of the iceberg.</p>
+<p>So hey! If you feel like following, I'll probably be posting some updates to this page.</p>
+<p>For now, what do I have now?</p>
+<h1 id="time-log">Time Log</h1>
+<h3 id="baby-steps-31-08-2025">Baby steps - 31/08/2025</h3>
+<p>They say the best way to approach a giant project is with baby steps. So here I am. The first thing I did was read. I read about the Linux Kernel, its components, some of their ins on how to contribute to, the lifecycle release and I familiarize with some basic concepts.</p>
+<blockquote>
+<p>By the way, to familiarize I read the incredible book <code>Linux Kernel Development</code> from <code>Robert Love</code>. And I checked out the <a href="https://www.docs.kernel.org">official website</a>.</p>
+</blockquote>
+<p>Once I felt confident enough I chose a component to contribute to. It just felt right to choose the modules. Why? Well, because it is easy to develop externally, you can plugged them directly into the current running system and you might as well remove them whenever you like. That is pretty much it.</p>
+<p>Finally, the code, what <em>I developed</em> is not actually mine but a fragment of the easiest and simplest Linux Kernel Module from the book directly.</p>
+<p>Here is the code</p>
+<pre data-lang="C" style="background-color:#2b303b;color:#c0c5ce;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#65737e;">/*
+</span><span style="color:#65737e;"> * hello.c - The Hello, World! Kernel Module
+</span><span style="color:#65737e;"> * From: Linux Kernel Development - Robert Love
+</span><span style="color:#65737e;">*/
+</span><span>
+</span><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">linux/init.h</span><span>&gt;
+</span><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">linux/module.h</span><span>&gt;
+</span><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">linux/kernel.h</span><span>&gt;
+</span><span>
+</span><span style="color:#b48ead;">static int </span><span style="color:#8fa1b3;">hello_init</span><span>(</span><span style="color:#b48ead;">void</span><span>)  
+</span><span>{
+</span><span>    </span><span style="color:#bf616a;">printk</span><span>(KERN_ALERT &quot;</span><span style="color:#a3be8c;">I bear a charmed life.</span><span style="color:#96b5b4;">\n</span><span>&quot;);
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">static void </span><span style="color:#8fa1b3;">hello_exit</span><span>(</span><span style="color:#b48ead;">void</span><span>)
+</span><span>{
+</span><span>    </span><span style="color:#bf616a;">printk</span><span>(KERN_ALERT &quot;</span><span style="color:#a3be8c;">Out, out, brief candle!</span><span style="color:#96b5b4;">\n</span><span>&quot;);
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">module_init</span><span>(hello_init);
+</span><span style="color:#bf616a;">module_exit</span><span>(hello_exit);
+</span><span>
+</span><span style="color:#bf616a;">MODULE_LICENSE</span><span>(&quot;</span><span style="color:#a3be8c;">GPL</span><span>&quot;);
+</span><span style="color:#bf616a;">MODULE_AUTHOR</span><span>(&quot;</span><span style="color:#a3be8c;">Shakespeare</span><span>&quot;);
+</span><span style="color:#bf616a;">MODULE_DESCRIPTION</span><span>(&quot;</span><span style="color:#a3be8c;">A Hello, World module</span><span>&quot;);
+</span></code></pre>
+<p>If it looks simple, it is because its simple. Now for the fun part where I spent most of my time: building the code.</p>
+<p>To build a Linux Kernel Module you have to use a live Linux Kernel repository, whether is the one installed on your computer or one from the internet. I decided I wanted to build on the latest version so <a href="https://github.com/SalOrak/linux.git">I forked the Linux repository</a> and downloaded. Once I had download it, I tried to build it which required me setting up the environment. Luckily for me I use NixOS so a simple <code>shell.nix</code> contaning all the necessary dependencies alognside <code>direnv</code> did the trick quite fast. Except for the part where I had to fight with <code>libelf</code> because NixOS uses a different one that does not contain some functions.</p>
+<blockquote>
+<p>If you are interested you can look up the <code>shell.nix</code> file to see which package I used. But I rather just say it: <code>elfutils</code>. Install it instead of <code>libelf</code> or you are going to run into some <code>implicit declaration</code> problems.</p>
+</blockquote>
+<p>The next step involved actually building the Linux Kernel Module. It is quite straight forward:</p>
+<ol>
+<li>Create a <code>Makefile</code> that contains (for now) a single line: <code>obj-m := hello.o</code>. Where <code>hello</code> is the name of your <em>main</em> file (the one with the initialization).
+<blockquote>
+<p>The kernel uses a different build system called <code>Kbuild</code>. Check it out in the official website <a href="https://docs.kernel.org/kbuild/index.html">Kbuild Documentation</a></p>
+</blockquote>
+</li>
+<li>Then run the following command: <code>make -C /path/to/kernel/repo M=$PWD</code></li>
+</ol>
+<p>Once finished building there should be a ton of files, but the one we are interested in is called <code>hello.ko</code>. That is the kernel module that can be imported using <code>insmod</code> or removed with <code>rmmod</code>.</p>
+<p>Now, if it was that easy, why did I spend so much time? Well well well.. I wanted to make the building process of any kernel module I developed easy, so I created a little script <code>build.sh</code>.</p>
+<p>The key to the building script is that leverages the NixOS powerful development system as well the common external kernel module development workflow. So now it is rather simple to build any of the Linux Kernel modules I developed whether using NixOS or a loca</p>
+<p>You can checkout the repository <a href="https://github.com/salorak/kernel-modules/">here</a>, and if you are interested in the build script you'll find it <a href="https://github.com/SalOrak/kernel-modules/blob/master/build.sh">here</a>.</p>
+
+            </section>
+        </article>
+    </main>
+</div>
+
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+    
+    
+        <div class="toc">
+    <div class="heading">Table of Contents</div>
+    <ul class="toc-list">
+        
+            <li class="parent">
+                
+                <a href="https://salorak.es/projects/kernel-modules/#kernel-modules">Kernel Modules</a>
+
+                
+            </li>
+        
+            <li class="parent">
+                
+                <a href="https://salorak.es/projects/kernel-modules/#time-log">Time Log</a>
+
+                
+                    <ul>
+                    
+                        
+                        <li>
+                            <a href="https://salorak.es/projects/kernel-modules/#baby-steps-31-08-2025">Baby steps - 31&#x2F;08&#x2F;2025</a>
+                        </li>
+
+                        
+                    
+                    </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    
+
+        </div>
+    </body>
+
+</html>

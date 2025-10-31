@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;salorak.es">
+
+    
+
+    
+    
+    
+        <title>
+            
+                ansible-doc.nvim
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="ansible-doc.nvim" />
+        
+    
+
+    
+        
+            <meta property="og:description" content="A Neovim plugin that lets you easily find and render ansible modules directly into the editor. It uses fzf-lua as the core." />
+        
+    
+
+    
+        
+            <meta name="description" content="A Neovim plugin that lets you easily find and render ansible modules directly into the editor. It uses fzf-lua as the core." />
+        
+    
+
+    
+    <link rel="icon" type="image/png" href=https://salorak.es/icon/favicon.svg />
+
+    
+    
+        <link href=https://salorak.es/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+
+    
+    <script defer src=https://salorak.es/js/codeblock.js></script>
+
+    
+    <script defer src=https://salorak.es/js/toc.js></script>
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://salorak.es/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://salorak.es/main.css" />
+
+    
+        
+            <link rel="stylesheet" href="https://salorak.es/custom.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/theme.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/projects.css">
+        
+            <link rel="stylesheet" href="https://salorak.es/cards.css">
+        
+    
+
+    
+        <script defer
+                src="https://salorak.es/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script></head>
+
+
+    <body>
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https:&#x2F;&#x2F;salorak.es class="logo">
+                <img alt="" src="https://salorak.es/images/minimalist-logo_128x128.png">
+            </a>
+        
+
+
+        <div class="socials">
+            
+                <a rel="me" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;hector-alarcon-salorak&#x2F;" class="social">
+                    <img alt="linkedin" src="https://salorak.es/icons/social/linkedin.svg">
+                </a>
+            
+                <a rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;salorak&#x2F;" class="social">
+                    <img alt="github" src="https://salorak.es/icons/social/github.svg">
+                </a>
+            
+                <a rel="me" href="mailto:hello@salorak.es" class="social">
+                    <img alt="contact" src="https://salorak.es/icons/social/email.svg">
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://salorak.es style="margin-right: 0.5em"> &#x2F;home </a>
+        
+            <a href=https://salorak.es/blog style="margin-right: 0.5em"> &#x2F;blog </a>
+        
+            <a href=https://salorak.es/projects style="margin-right: 0.5em"> &#x2F;projects </a>
+        
+            <a href=https://salorak.es/about style="margin-right: 0.5em"> &#x2F;about </a>
+        
+
+        
+            <button id="search-button"
+                    class="search-button"
+                    title="$SHORTCUT to open search">
+                <img src="https://salorak.es/icons/search.svg"
+                    alt="Search"
+                    class="search-icon">
+            </button>
+
+            <div id="searchModal"
+                class="search-modal js"
+                role="dialog"
+                aria-labelledby="modalTitle">
+                <div id="modal-content">
+                    <h1 id="modalTitle" class="page-header">Search</h1>
+                    <div id="searchBar">
+                        <input id="searchInput"
+                            role="combobox"
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-expanded="false"
+                            aria-controls="results-container"
+                            placeholder="Search..." />
+                        <button id="clear-search" class="clear-button" title="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="results-container">
+                        <div id="results-info">
+                            <span id="zero_results" style="display: none;">No results</span>
+                            <span id="one_result" style="display: none;">1 result</span>
+                            <span id="many_results" style="display: none;">$NUMBER results</span>
+                        </div>
+                        <div id="results" role="listbox"></div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+    </div>
+</nav>
+
+
+            
+            
+    
+<div class="visible-element-observer-root" data-selector="main article p">
+    <main>
+        <article>
+            <div class="title">
+                
+                
+    
+    <div class="page-header">
+        ansible-doc.nvim
+    </div>
+    
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2025-08-20</time>
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                            
+                        
+
+                        
+                            :: <a href="https:&#x2F;&#x2F;github.com&#x2F;SalOrak&#x2F;ansible-doc.nvim.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        
+                    
+
+                    
+                    
+
+                    
+                    
+                        <span class="tags-label"> :: </span>
+                        <span class="tags">
+                                <a href="https://salorak.es/tags/neovim/"
+                                   class="post-tag">neovim</a>
+                            
+                                <a href="https://salorak.es/tags/lua/"
+                                   class="post-tag">lua</a>
+                            
+                                <a href="https://salorak.es/tags/ansible/"
+                                   class="post-tag">ansible</a>
+                            
+                        </span>
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+
+            <section class="body">
+                <h1 id="ansible-doc-nvim">ansible-doc.nvim</h1>
+<p>I've recently finished another plugin for <code>Neovim</code>: <code>ansible-doc.nvim</code>. This plugin let's you find ansible module, render the documentation for the module and customize the look and feel directly into your editor.</p>
+<p>I think the best way to explain a plugin is, most of the times, to show it, so there you go:</p>
+<p>As you can see, with a single keypress mapped to execute <code>AnsibleDoc</code> I can access the whole list of ansible modules quite fast I'd say. Then I can fuzzy find my way out of the list to choose exactly the module I want.</p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>It is rather a simple project as it uses <a href="https://github.com/ibhagwan/fzf-lua"><code>fzf-lua</code></a> as the core to fuzzy find the modules names.</p>
+<p>So, how does it work?</p>
+<ol>
+<li>First, the plugin calls the <code>setup()</code> function, which generates the list of all ansible modules alongside a brief description and stores it in disk.</li>
+<li>Once the <code>AnsibleDoc</code> function is called, it reads from disk the list of all ansible modules if it is no already cached. It uses the list in fzf-lua so you can fuzzy find.</li>
+<li>Finally, when selecting one module from the list it gets rendered as a new read-only buffer into the editor.</li>
+</ol>
+<p>There are a couple of technical decision I had to make. First and foremost, I'm storing the ansible modules in disk, why? Because calling the system command that generates it (which is <code>ansible-doc --list --json</code>) is slow, like REALLY slow. How much slow? Well, better an image than words:</p>
+<p><img src="/projects/ansible-doc-list-is-slow.png" alt="ansible-doc-list-is-slow" /></p>
+<p>I mean, almost <strong>3 seconds</strong> on my computer. I can't wait 3 seconds everytime I want to find a module. I needed to speed that up significantly.</p>
+<blockquote>
+<p>Rant 1: Okay, yes I have an old computer (7 years old) but that is not an excuse. My ThinkPad T490 is capable of running emacs smoothly but takes 3 seconds to load the list of modules? How am I supposed to <strong>discover</strong> the modules?  This problem is what it made me do the plugin. That and  I don't like using the web for documentation that I already have downloaded in my system. Manuals exist for a reason right? Stop with the ranting... To be fair, I love ansible comes with ansible-doc by default.</p>
+</blockquote>
+<p>That out the way, what is left? Ehem, yes. After selecting the module the idea would be to fetch directly from <code>ansible-doc</code> as json. And that is what happens... at least the first time. After that, it is, once again, stored locally as it is faster reading from a file than generating documentation.</p>
+<p>Don't believe me? Okay. Next image is how much it takes to generate the <code>ansible.posix.at</code> documentation module as JSON:</p>
+<p><img src="/projects/ansible-doc-module-time-posix-at.png" alt="ansible-doc-module-time-to-generate" /></p>
+<p>A second is not <em>too much</em> but hey, I'm looking for a fast solution, the fastest if possible. So, yes, I'm not going to force users to wait at least 1 second each time they render the module. Only the first time they do it which I think is <del>reasonable</del>.</p>
+<blockquote>
+<p>Rant 2: You could kindly ask, hey but can't you just find the JSON representation of these modules directly in your filesystem? That... that does not exist. You see, the JSON representation is just for output, the documentation is a <strong>python file</strong>. Yep. That is why I'm saving to disk.</p>
+</blockquote>
+<p>And how does that worked out? Well, quite well I'd say. Now it is almost instant to search for any ansible modules as well as rendering them.</p>
+<p>Oh! Almost forgot. I added a test function that can be called <code>require('ansible-doc.test'.all_modules()</code> that tests all modules from the list. It is quite slow but as a side effect it saves all the modules to disk making it the fastest. Just for your information, all the modules and the list weights a total 154 MB. Quite a chunk I'd say. But that's the tradeoff: speed for disk.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Aaaand that's it. I hope you enjoy the plugin as much as I do. If you have doubts, issues or suggestions please create an issue in the <a href="https://github.com/salorak/ansible-doc.nvim/issues">GitHub Repository</a>.</p>
+<p><strong>THE END</strong></p>
+<blockquote>
+<p>PS: Even though my <em>problems</em> related to ansible-doc, I truly enjoy using <code>ansible</code>. It is such a complete and simple solution that I cannot but appreciate the art behind it. Thank you to all the developers who contributed to it! &lt;3</p>
+</blockquote>
+
+            </section>
+        </article>
+    </main>
+</div>
+
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+    
+    
+        <div class="toc">
+    <div class="heading">Table of Contents</div>
+    <ul class="toc-list">
+        
+            <li class="parent">
+                
+                <a href="https://salorak.es/projects/ansibledocs-nvim/#ansible-doc-nvim">ansible-doc.nvim</a>
+
+                
+                    <ul>
+                    
+                        
+                        <li>
+                            <a href="https://salorak.es/projects/ansibledocs-nvim/#how-does-it-work">How does it work?</a>
+                        </li>
+
+                        
+                    
+                        
+                        <li>
+                            <a href="https://salorak.es/projects/ansibledocs-nvim/#conclusion">Conclusion</a>
+                        </li>
+
+                        
+                    
+                    </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    
+
+        </div>
+    </body>
+
+</html>

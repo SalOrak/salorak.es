@@ -1,0 +1,1 @@
+:root.dark{--text-0: #fff;--text-1: #b4b4c5;--text-2: #7b7b98;--bg-0: #1f1f28;--bg-1: #2a2a36;--bg-2: #404053;--border-color: var(--bg-2);--primary-color: #7e9cd8;--secondary-color: #dca561;--highlight-color: #e46876;--heading-color: #938aa9;--link-hover-color: #7fb4ca}:root.dark .social>img,:root.dark .search-button>img{filter:invert(1)}
